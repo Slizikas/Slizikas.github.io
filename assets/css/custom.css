@@ -137,6 +137,103 @@ body .footer .social-links a:hover {
   color: #a7e8d8;
 }
 
+body .navmenu a,
+body .navmenu a:hover,
+body .navmenu a:focus,
+body .navmenu .active,
+body .navmenu .active:focus {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  body .navmenu {
+    padding: 0.65rem 0.8rem;
+    border: 1px solid rgba(167, 232, 216, 0.22);
+    border-radius: 999px;
+    background: rgba(20, 31, 38, 0.78);
+    box-shadow: 0 0.75rem 1.8rem rgba(0, 0, 0, 0.24);
+  }
+
+  body .navmenu ul {
+    gap: 0.15rem;
+  }
+
+  body .navmenu a,
+  body .navmenu a:focus {
+    padding: 0.45rem 0.7rem;
+  }
+
+  body .navmenu>ul>li>a:before {
+    left: 50%;
+    bottom: -0.15rem;
+    width: 0;
+    transform: translateX(-50%);
+  }
+
+  body .navmenu a:hover:before,
+  body .navmenu li:hover>a:before,
+  body .navmenu .active:before {
+    width: calc(100% - 1.4rem);
+  }
+}
+
+body .scroll-top {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #a7e8d8;
+  border-radius: 0.85rem;
+  background: #101a20;
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.35);
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+body .scroll-top i {
+  color: #a7e8d8;
+}
+
+body .scroll-top:hover {
+  border-color: #f0c674;
+  background: #f0c674;
+  box-shadow: 0 0.8rem 1.8rem rgba(240, 198, 116, 0.24);
+  transform: translateY(-4px);
+}
+
+body .scroll-top:hover i {
+  color: #101a20;
+}
+
+body .contact .info-box h3,
+body .contact .contact-form h3 {
+  color: #b7d8e8;
+}
+
+body .contact .info-box p,
+body .contact .info-item .content h4,
+body .contact .info-item .content p,
+body .contact .contact-form p {
+  color: #c5d5dc;
+  opacity: 1;
+}
+
+body .contact .contact-form .form-control,
+body .contact .contact-form .form-select {
+  color: #e7f2f7;
+}
+
+body .contact .contact-form .form-control::placeholder,
+body .contact .contact-form .form-select::placeholder {
+  color: #aebfc7;
+  opacity: 1;
+}
+
+body .contact .contact-form .btn,
+body .contact .contact-form .btn:hover,
+body .contact .contact-form .btn:active {
+  border-color: #a7e8d8;
+  background-color: #a7e8d8;
+  color: #101a20;
+}
+
 main .about.section,
 main .resume.section,
 main .portfolio.section {
@@ -158,6 +255,7 @@ main .about .intro-content {
 }
 
 main .about .profile-figure {
+  text-align: center;
   padding: 0.75rem;
   border: 1px solid rgba(167, 232, 216, 0.22);
   border-radius: 1.5rem;
@@ -166,7 +264,9 @@ main .about .profile-figure {
 }
 
 main .about .profile-figure .profile-photo {
+  display: block;
   width: 100%;
+  margin-inline: auto;
   border-radius: 1rem;
 }
 
