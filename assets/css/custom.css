@@ -340,7 +340,7 @@ body .services .ratio iframe {
   box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.3);
 }
 
-body .services table {
+body .services .services-table {
   border-collapse: separate;
   border-spacing: 0;
   overflow: hidden;
@@ -350,11 +350,11 @@ body .services table {
   box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.18);
 }
 
-body .services table thead th {
-  padding: 1rem 1.25rem;
+body .services .services-table thead th {
+  padding: 0.9rem 1.25rem;
   border-color: #77aebd;
-  background: #c5dbe8;
-  color: #101a20;
+  background: #18333b;
+  color: #a7e8d8;
   font-family: var(--heading-font);
   font-weight: 700;
   text-align: center;
@@ -362,29 +362,26 @@ body .services table thead th {
   letter-spacing: 0.04em;
 }
 
-body .services table tbody th,
-body .services table tbody td {
+body .services .services-table tbody th,
+body .services .services-table tbody td {
   padding: 0.9rem 1.25rem;
   border-color: rgba(16, 26, 32, 0.24);
   color: #101a20;
   text-align: center;
   vertical-align: middle;
+  transition: background-color 0.2s ease;
 }
 
-body .services table tbody tr:nth-of-type(even) {
-  background: #aebfc7;
+body .services .services-table tbody tr:nth-of-type(even) > * {
+  background-color: #aebfc7;
 }
 
-body .services table tbody tr:nth-of-type(odd) {
-  background: #e7f2f7;
+body .services .services-table tbody tr:nth-of-type(odd) > * {
+  background-color: #e7f2f7;
 }
 
-body .services table tbody tr {
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-body .services table tbody tr:hover {
-  background: #f0c674;
+body .services .services-table tbody tr:hover > * {
+  background-color: #f0c674;
 }
 
 body .services .col-md-6>ul {
